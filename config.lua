@@ -1,16 +1,16 @@
 Config = {}
 
-Config.Framework = "esx" -- esx/qb framework
+Config.Framework = "esx" -- "esx" or "qb"
 
 Config.Vehicle = {
-    Full = true, -- Full tuning
-    VehicleStore = 'G', -- Key to store the vehicle (G by default)
-
+    Full = true, -- Full tuning          
+    VehiclePlate = true, -- Enable vehicle plate name        
+    NameVehiclePlate = 'YOUR PLATE', -- Plate name
+    VehicleStore = 'G' -- Key to store the vehicle (Don't Touch!!!)
 }
 
 Config.CarItems = {
-    ['Bf400'] = 'bf400',
-
+    ['Bf400'] = 'bf400'
 }
 
 -- ["bf400"] = { -- Add this to ox_inventory - data - items.lua
