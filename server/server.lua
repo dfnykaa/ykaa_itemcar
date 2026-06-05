@@ -41,3 +41,11 @@ RegisterNetEvent('ykaa_itemcar:returnItem', function(itemName)
         end
     end
 end)
+
+AddEventHandler("onResourceStart", function(r)
+    if r ~= GetCurrentResourceName() then return end
+    if GetCurrentResourceName() ~= "ykaa_itemcar" then
+        print("^6[YKAA ITEMCAR] ^3[WARNING] Resource was renamed!")
+    end
+    print("^6[YKAA ITEMCAR] ^7You are using version ^6" .. GetResourceMetadata(GetCurrentResourceName(), "version", 0))
+end)
